@@ -1,0 +1,1033 @@
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* #E31B23
+#E51A22 */
+
+/* DESKTOP VIEW */
+
+.container {
+    width: 100%;
+}
+
+
+/* HEADER */
+
+header {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    box-sizing: border-box;
+
+    padding: 10px 30px;
+
+    background-color: rgba(255, 255, 255, 0.9);
+
+    backdrop-filter: blur(20px);
+
+    border-radius: 0 0 30px 30px;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+}
+
+
+   /* LOGO */
+
+.logo {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+}
+
+
+.logo img {
+    width: 130px;
+    height: 60px;
+
+    object-fit: contain;
+}
+
+
+   /* LOCATION */
+
+.location {
+    display: flex;
+    align-items: center;
+
+    gap: 5px;
+
+    color: #fc040d;
+
+    font-size: 1.4rem;
+}
+
+
+.location .material-symbols-outlined {
+    color: #fc040d;
+    font-size: 2rem;
+}
+
+
+   /* NAVIGATION */
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+
+nav ul {
+    display: flex;
+
+    align-items: center;
+
+    gap: 35px;
+
+    list-style: none;
+}
+
+
+nav a {
+    color: #222;
+
+    text-decoration: none;
+
+    font-size: 1.5rem;
+
+    font-weight: 600;
+}
+
+
+nav a:hover {
+    color: #fc040d;
+}
+
+
+/* HOME */
+
+nav .home {
+    color: #fc040d;
+}
+
+
+
+   /* ICONS */
+
+.icon-group {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+
+.cart-icon {
+    color: #fc040d;
+
+    font-size: 2.5rem;
+}
+
+
+.ham-menu {
+    display: none;
+
+    color: #fc040d;
+
+    font-size: 2.8rem;
+
+    cursor: pointer;
+}
+
+
+
+/* to hide the checkbox */
+.nav-toggle {
+    display: none;
+}
+
+
+   /* TABLET */
+
+@media (max-width: 1024px) {
+
+    nav {
+        display: none;
+
+        position: absolute;
+
+        top: 100%;
+        right: 20px;
+
+        width: 220px;
+
+        background-color: white;
+
+        padding: 20px;
+
+        border-radius: 15px;
+
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    }
+
+
+    nav ul {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 20px;
+    }
+
+
+    .nav-toggle:checked ~ nav {
+        display: flex;
+    }
+
+
+    .ham-menu {
+        display: block;
+    }
+
+}
+
+
+/* phone */
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 10px 15px;
+
+        border-radius: 0 0 20px 20px;
+    }
+
+
+    .logo {
+        gap: 8px;
+    }
+
+
+    .logo img {
+        width: 100px;
+        height: 50px;
+    }
+
+
+    .location {
+        font-size: 1.2rem;
+    }
+
+
+    .location .material-symbols-outlined {
+        font-size: 1.8rem;
+    }
+
+
+    .cart-icon {
+        font-size: 2.2rem;
+    }
+
+
+    .ham-menu {
+        font-size: 2.5rem;
+    }
+
+
+    nav {
+        right: 10px;
+
+        width: 200px;
+    }
+
+}
+
+
+
+.main {
+    display: flex;
+
+
+}
+
+.WELCOME-TEXT-CONTAINER {
+    display: flex;
+
+
+
+}
+
+
+
+/* the MAIN div */
+
+main {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    background-color: white;
+
+    padding-top: 60px;
+
+    box-sizing: border-box;
+}
+
+
+   /* LEFT SIDE */
+
+.welcome-text-container {
+    flex: 1;
+
+    padding: 40px 2% 40px 5%;
+
+    color: #fc040d;
+}
+
+
+.top-text {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+
+.welcome-text-container h1 {
+    font-size: 7rem;
+    line-height: 1;
+    margin-bottom: 30px;
+}
+
+
+.sub-text {
+    font-size: 2rem;
+    line-height: 1.4;
+    margin-bottom: 25px;
+}
+
+
+
+   /* DELIVERY / PICKUP */
+
+
+.delivery-and-pickup {
+    display: flex;
+
+    gap: 20px;
+}
+
+
+.box1 {
+    width: 150px;
+    height: 120px;
+
+    background-color: #fc040d;
+
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+
+.bo-text {
+    font-size: 5rem;
+    color: white;
+}
+
+
+.b-text {
+    font-size: 1.6rem;
+    color: white;
+
+    margin-top: 5px;
+}
+
+
+
+   /* RIGHT SIDE IMAGE */
+
+
+.main-image {
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.main-image img {
+    width: 100%;
+    max-width: 650px;
+
+    height: auto;
+
+    display: block;
+
+    object-fit: contain;
+}
+
+
+   /* TABLET */
+
+
+@media (max-width: 1024px) {
+
+    main {
+        padding-top: 40px;
+    }
+
+    .welcome-text-container {
+        padding-left: 4%;
+    }
+
+    .top-text {
+        font-size: 2rem;
+    }
+
+    .welcome-text-container h1 {
+        font-size: 5rem;
+    }
+
+    .sub-text {
+        font-size: 1.7rem;
+    }
+
+    .box1 {
+        width: 130px;
+        height: 110px;
+    }
+
+    .bo-text {
+        font-size: 4rem;
+    }
+
+    .b-text {
+        font-size: 1.4rem;
+    }
+
+}
+
+
+
+   /* PHONE */
+
+@media (max-width: 768px) {
+
+    main {
+        flex-direction: column;
+
+        padding-top: 30px;
+    }
+
+
+    .welcome-text-container {
+        width: 90%;
+
+        padding: 30px 0;
+
+        text-align: center;
+    }
+
+
+    .top-text {
+        font-size: 2rem;
+    }
+
+
+    .welcome-text-container h1 {
+        font-size: 4.5rem;
+
+        line-height: 1.05;
+    }
+
+
+    .sub-text {
+        font-size: 1.6rem;
+    }
+
+
+    .delivery-and-pickup {
+        justify-content: center;
+
+        gap: 15px;
+    }
+
+
+    .box1 {
+        width: 130px;
+        height: 110px;
+    }
+
+
+    .bo-text {
+        font-size: 4rem;
+    }
+
+
+    .main-image {
+        width: 100%;
+    }
+
+
+    .main-image img {
+        width: 90%;
+    }
+
+}
+
+
+
+/* FOOD SECTION */
+
+.food {
+    width: 80%;
+    margin: 40px auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+/* FOOD CARDS */
+
+.food-divs {
+    width: 100%;
+    height: 250px;
+
+    overflow: hidden;
+
+    border-radius: 15px;
+
+    border: 2px solid #fc040d;
+}
+
+
+/* FOOD IMAGES */
+
+.food-divs img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: transform 0.3s ease;
+}
+
+
+/* tablet view */
+
+@media (max-width: 1024px) {
+
+    .food {
+        width: 90%;
+
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 20px;
+    }
+
+    .food-divs {
+        height: 230px;
+    }
+
+}
+
+   /* PHONE view */
+
+@media (max-width: 768px) {
+
+    .food {
+        width: 90%;
+
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+    .food-divs {
+        height: 230px;
+    }
+
+}
+
+
+
+
+
+   /* ORDER ON THE GO */
+
+.phone {
+    width: 100%;
+
+    min-height: 450px;
+
+    margin: 90px 0;
+
+    background-color: #fc040d;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+
+   /* PHONE IMAGE */
+
+.box-phone {
+    flex: 1;
+
+    height: 450px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: flex-start;
+
+    overflow: hidden;
+}
+
+
+.box-phone img {
+    height: 750px;
+
+    width: auto;
+
+    display: block;
+}
+
+
+   /* TEXT */
+
+.box-text {
+    flex: 1;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: flex-start;
+
+    padding: 40px;
+}
+
+
+.app-title {
+    color: white;
+
+    font-size: 5rem;
+
+    line-height: 1.1;
+
+    margin-bottom: 20px;
+}
+
+
+.app-description {
+    color: white;
+
+    font-size: 1.8rem;
+
+    line-height: 1.6;
+
+    max-width: 500px;
+}
+
+
+   /* TABLET */
+
+@media (max-width: 1024px) {
+
+    .phone {
+        min-height: 400px;
+    }
+
+
+    .box-phone {
+        height: 400px;
+    }
+
+
+    .box-phone img {
+        height: 650px;
+    }
+
+
+    .app-title {
+        font-size: 4rem;
+    }
+
+
+    .app-description {
+        font-size: 1.6rem;
+    }
+
+}
+
+
+   /* PHONE */
+
+
+@media (max-width: 768px) {
+
+    .phone {
+        flex-direction: column;
+
+        min-height: auto;
+
+        margin: 60px 0;
+    }
+
+
+    .box-phone {
+        width: 100%;
+
+        height: 350px;
+
+        flex: none;
+    }
+
+
+    .box-phone img {
+        height: 550px;
+    }
+
+
+    .box-text {
+        width: 100%;
+
+        box-sizing: border-box;
+
+        padding: 30px 20px 50px;
+
+        align-items: center;
+
+        text-align: center;
+    }
+
+
+    .app-title {
+        font-size: 4rem;
+    }
+
+
+    .app-description {
+        font-size: 1.5rem;
+
+        max-width: 90%;
+    }
+
+}
+
+
+
+
+   /* ABOUT US SECTION */
+.about-us {
+    width: 80%;
+    margin: 60px auto;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    gap: 50px;
+}
+
+.about {
+    flex: 1;
+}
+
+.about p {
+    color: #222;
+    font-size: 1.6rem;
+    line-height: 1.7;
+    font-weight: 500;
+}
+
+.about-pic {
+    flex: 1;
+}
+
+.about-pic img {
+    width: 100%;
+    height: 350px;
+    
+    object-fit: cover;
+    object-position: center;
+    
+    border-radius: 30px;
+    
+    display: block;
+}
+
+
+/* this is for the tablet view in the about section */
+
+@media (max-width: 1024px) {
+    .about-us {
+        width: 90%;
+        gap: 30px;
+    }
+
+    .about p {
+        font-size: 1.5rem;
+    }
+
+    .about-pic img {
+        height: 300px;
+    }
+}
+
+/* this is for mobile view */
+@media (max-width: 768px) {
+    .about-us {
+        width: 90%;
+        
+        flex-direction: column;
+        
+        gap: 30px;
+        
+        margin-top: 40px;
+    }
+
+    .about {
+        width: 100%;
+    }
+
+    .about p {
+        font-size: 1.5rem;
+        line-height: 1.6;
+    }
+
+    .about-pic {
+        width: 100%;
+    }
+
+    .about-pic img {
+        width: 100%;
+        height: 250px;
+        
+        border-radius: 20px;
+    }
+
+}
+
+
+
+/* BLOG SECTION */
+
+.blog-container {
+    width: 100%;
+    background-color: #f1070f44;
+    padding: 4rem 0;
+
+    box-sizing: border-box;
+}
+
+.blog {
+    width: 80%;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.blog .offer {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.blog .offer img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    display: block;
+}
+/* responsiveness for the phone, no need for tablet because i used aspect ratio */
+@media (max-width: 768px) {
+
+    .blog {
+        width: 90%;
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    background-color: #fc040d;
+    color: white;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 4rem 2rem;
+    padding: 4rem 8%;
+
+    box-sizing: border-box;
+}
+
+.footer-logo img {
+    width: 180px;
+}
+
+.footer-div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer-div h2,
+.footer-feedback h2 {
+    font-size: 2rem;
+}
+
+.footer-div p,
+.footer-div a,
+.footer-feedback p,
+.footer-feedback a {
+    font-size: 1.4rem;
+}
+
+.footer-div a,
+.footer-feedback a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-feedback {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* for tablet view */
+@media (max-width: 1024px) {
+
+    footer {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 4rem 5%;
+    }
+
+}
+
+/* phone view for the footer */
+@media (max-width: 768px) {
+
+    footer {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 3rem 2rem;
+    }
+
+    .footer-logo,
+    .footer-div,
+    .footer-feedback {
+        align-items: center;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 1. High-Contrast Contrast (True Complementary)
+This palette uses direct opposites on the color wheel to create maximum contrast, vibrant visual energy, and clean structural separation.
+🟥 Primary Red: #E31B23 (Main brand color)
+🟩 Teal/Cyan: #1BE3DB (Direct vibrant contrast)
+🟦 Deep Navy: #0F172A (Rich background text/neutral)
+⬜ Soft Off-White: #F8FAFC (Clean background) */
+
+/* 2. Modern & Fresh (Analogous + Accent)A sleek, current look that softens the intense red with warm tones and balances it with a cooling forest green accent.
+🟥 Primary Red: #E31B23 (Main accent)
+🍊 Warm Amber: #F59E0B (Secondary focus/warnings)
+🌲 Deep Forest Green: #064E3B (Sophisticated cooling contrast)
+🪙 Warm Slate: #64748B (Neutral text/borders) */
+
+/* 3. Fast-Food Classic (Warm & Inviting)An appetite-stimulating palette modeled after classic food industry design rules, utilizing highly energetic warm tones alongside dark charcoal for high readability.
+🟥 Primary Red: #E31B23 (Action buttons/Headings)
+🟨 Golden Yellow: #FFC72C (Sub-headers/Loyalty tags)
+🖤 Charcoal Black: #1C1C1C (Primary body text)
+🍦 Cream/Ivory: #FFFDF9 (Soft, warm background) */
